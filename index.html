@@ -1,0 +1,341 @@
+ <!--specialist-->
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+<title>Clínica Dental</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #2d2c2c;
+  line-height: 1.8;
+}
+
+.image-div{
+  float:left;
+  margin-right:50px;
+  margin-left:50px;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('imagenes/portada.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#inicio" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#sobre nosotros" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE NOSOTROS</a>
+    <a href="#ESPECIALISTAS" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ESPECIALISTAS</a>
+    <a href="#clinica" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hospital-o"></i> CLÍNICA</a>
+    <a href="#contacto" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#sobre nosotros" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE NOSOTROS</a>
+    <a href="#ESPECIALISTAS" class="w3-bar-item w3-button" onclick="toggleFunction()">ESPECIALISTAS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="inicio">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DENTISTAS <span class="w3-hide-small">EN</span> FERROL</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="sobre nosotros">
+  <h3 class="w3-center">SOBRE NOSOTROS</h3>
+  <p>Ponemos a su disposición a nuestros especialistas en odontología en la Clínica Dental para cuidar de su salud
+     dental y oral en Ferrol. Tenemos profesionales altamente cualificados en el personal que están continuamente aprendiendo nuevas habilidades.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+
+      <img src="imagenes\fotodeclinica.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Foto de la clínica" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Podemos personalizar los tratamientos que ofrecemos en función de las necesidades de cada paciente individual gracias a nuestro personal 
+        altamente cualificado de líderes de la industria que son capaces de llevar a cabo cualquier tratamiento de una manera totalmente 
+        individualizada al mismo tiempo que se adhiere a un estudio previo y se minimice el riesgo.<br><br>Nuestra clínica está equipada con
+         la tecnología más moderna. Para que nuestros expertos brinden a nuestros clientes el mejor cuidado buccodental, ofrecemos las 
+         herramientas y materiales de trabajo más sofisticados del mercado.</p>
+    </div>
+  </div>
+  <p class="w3-xlarge w3-center w3-padding-16">La sonrisa perfecta está a una cita</p>
+  <!--<p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+-->
+<div class="w3-row w3-center w3-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <img src="imagenes\dentist(1).png" style="width:60px;height:60px;" alt="logo"><br>
+    <span class="w3-large">EXPERIENCIA</span>
+  </div>
+  <div class="w3-quarter w3-section">
+    <img src="imagenes\handshake.png" style="width:60px;height:60px;" alt="logo"><br>
+    <span class="w3-large">COMPROMISO</span>
+  </div>
+  <div class="w3-quarter w3-section">
+    <img src="imagenes\dentist.png" style="width:60px;height:60px;" alt="logo"><br>
+    <span class="w3-large">TECNOLOGIA</span>
+  </div>
+  <div class="w3-quarter w3-section">
+    <img src="imagenes\tooth.png" style="width:60px;height:60px;" alt="logo"><br>
+    <span class="w3-large">SALUD</span>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<!--
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+-->
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="ESPECIALISTAS">
+  <h3 class="w3-center">ESPECIALISTAS</h3>
+  <p class="w3-center"><em>Conoce a nuestros especialistas en Ortodoncia</em></p><br>
+  
+  
+  <div id="banner" style="overflow: hidden; ">
+    <div class="image-div" >
+      <img src="imagenes\medico.jpg" style="width:150px;height:200px;" alt="medico">
+      <p class="w3-center"><strong>Pablo López</strong></br>Director médico de la clínica.</p>
+    </div>
+  
+    <div class="image-div" >
+      <img src ="imagenes\doctora.jpg" style="width:150px;height:200px;" alt="medico">
+      <p class="w3-center"><strong>Paula López</strong></br>Odontóloga.</p>
+    </div>
+    <div class="image-div" >
+      <img src ="imagenes\doctor1.png" style="width:150px;height:200px;" alt="medico">
+      <p class="w3-center"><strong>Paula López</strong></br>Endodoncista.</p>
+    </div>
+    <div style="clear:left;"></div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="clinica">
+  <h3 class="w3-center">CLÍNICA</h3>
+  <p class="w3-center"><em>Pincha en una imagen para ampliarla</em></p><br>
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="imagenes\clinica8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="imagenes/clinica12.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica2">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="imagenes\clinica2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="imagenes\clinica3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="imagenes\medico.jpg" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="imagenes\clinica5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="imagenes\clinica6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="imagenes\clinica7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div>
+      <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+    </div>
+  </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<!--
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+  </div>
+</div>
+-->
+<!-- Container (Contact Section) -->
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64 w3-center styl" id="contacto">
+  <h3 class="w3-center">CONTACTO</h3>
+  <p class="w3-center"><em>Estamos en la Plaza de Cuba, 85, bajo ¡Esperamos verte pronto!</em></p>
+  <!--<img src="file:///C:\Users\David\Documents\vscode\imagenes\edificio.jpeg" style="width:30%;" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica">-->
+
+
+    <img src="imagenes\edificio.jpeg" 
+    style="width:30%;" onclick="onClick(this)" class="w3-hover-opacity" alt="clinica" align="center" hspace="20" >
+ 
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23156.30476184044!2d-8.236890
+    249445931!3d43.491109098642916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7618d703d1
+    77%3A0x90284b0722a8b65b!2sFerrol%2C%20La%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1677439092570!5m2!1ses!2ses" 
+    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" align="center" hspace="20" ></iframe>
+ 
+  <div class="w3-row w3-padding-32 w3-center w3-section">
+    <p class="w3-large">Ponte en contacto con nosotros!</p>
+    <div class="w3-half-center m8 w3-panel">
+      <div class="w3-large w3-center">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-center"></i> Ferrol, A Coruña<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-center"></i> <a href="tel:+34655555555">655555555</a><br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-center"></i>  <a href="mailto:dentistas@ferrol.com">dentistas@ferrol.com</a> <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!--
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+      
+    </div>
+    
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#inicio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver al inicio</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <a href="https://www.flaticon.com/free-icons/cross" title="cross icons">Cross icons created by Good Ware - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/partnership-handshake" title="Partnership handshake icons">Partnership handshake icons created by Freepik - Flaticon</a>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
